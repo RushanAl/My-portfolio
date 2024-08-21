@@ -1,0 +1,399 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4e4e4e;
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo i {
+  margin-right: 0.5rem;
+}
+
+.navbar .nav-links i {
+  font-size: 1.5rem;
+}
+
+/* Home Section Styling */
+#home-sec {
+  background-image: url(../images/stars.jpg);
+  padding: 2rem 0;
+  height: 400px;
+}
+
+#home-sec .home-content {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+#home-sec .title h2,
+#home-sec .title h1 {
+  margin: 0;
+}
+
+#home-sec .title h2 {
+  font-size: 2.5rem;
+  color: #e2e2e2;
+}
+
+#home-sec .title h2:hover {
+  color: #5c5c5c;
+  font-style: italic;
+  text-decoration-line: underline #ffff;
+}
+
+#home-sec .title h1 {
+  color: #666;
+
+
+}
+#home-sec .title h1:hover {
+  color: #fff;
+  text-decoration-style: dashed #ffff;
+  /* font-size: xx-large; */
+  font-style: italic;
+
+}
+
+#home-sec .title h1 {
+  font-size: 5rem;
+  color: #ccc;
+}
+
+#home-sec button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+#home-sec button:hover {
+  color: rgb(255, 255, 255);
+  background-color: #020202;
+}
+
+#home-sec .download {
+  background-color: #f39c12;
+}
+
+/* About Section Styling */
+#about-sec {
+  background: #e2e2e2;
+  padding: 2rem 0;
+}
+
+#about-sec .about-inner-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#about-sec .inner-content {
+  text-align: center;
+  margin: 1rem;
+}
+
+#about-sec .inner-content i {
+  font-size: 2rem;
+  color: #f39c12;
+}
+
+#about-sec .h3-inner-content {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+#about-sec .p-inner-content {
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+/* General Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Data Section Styling */
+.data-sec {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Slightly transparent background */
+  padding: 2rem;
+  margin: 2rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.data-sec .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.data-sec .data-set {
+  flex: 1;
+  min-width: 300px; /* Ensures that the section has a minimum width */
+  margin-right: 1rem;
+}
+
+.data-sec .info {
+  flex: 1;
+  min-width: 300px; /* Ensures that the section has a minimum width */
+}
+
+.data-sec h2 {
+  margin-bottom: 1rem;
+}
+
+.data-sec p {
+  margin-bottom: 1rem;
+}
+
+/* Camera Section Styling */
+.camera-sec {
+  background: #f4f4f4;
+  padding: 2rem 0;
+}
+
+.camera-sec .next-data {
+  text-align: center;
+}
+
+.camera-sec .h2-next-data {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.camera-sec .p-next-data {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.camera-sec button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Gallery Section Styling */
+.gallery-sec {
+  padding: 2rem 0;
+}
+
+.gallery-sec .parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-sec .parent div {
+  overflow: hidden;
+}
+
+.gallery-sec .parent img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* Gallery Section Styling */
+.gallery-sec {
+  padding: 2rem 0;
+}
+
+.gallery-sec .parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  gap: 1rem;
+}
+
+.gallery-sec .div1 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.gallery-sec .div2 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.gallery-sec .div4 {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.gallery-sec .div5 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.gallery-sec .div6 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.gallery-sec .div7 {
+  grid-column: span 6;
+  grid-row: span 1;
+}
+
+.gallery-sec .parent div {
+  overflow: hidden;
+}
+
+.gallery-sec .parent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  margin: 1rem;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-social h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #f39c12;
+}
+
+.footer-about p {
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: #f39c12;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-social .social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-links {
+    margin-top: 1rem;
+  }
+
+  #home-sec .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .data-sec {
+    width: 100%; /* Full width on medium screens */
+    margin-bottom: 2rem;
+  }
+
+  .next-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-sec .parent {
+    grid-template-columns: 1fr;
+  }
+
+  .data-sec,
+  .next-section {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
